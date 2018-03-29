@@ -1,2 +1,3 @@
 def to_rna(dna_strand):
-    pass
+    mapping = str.maketrans('GCTA', 'CGAU')
+    return dna_strand.translate(mapping)
